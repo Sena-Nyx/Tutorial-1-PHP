@@ -6,24 +6,24 @@
   <title>Ejercicio 10</title>
 </head>
 <body>
-<form method="post" action="t1p10.1.php">
-  <input type="text" name="nombre" placeholder="Ingrese su nombre">
-  <br>
+  <form method="post" action="t1p10_php.php">
+    <input type="text" name="nombre" placeholder="Ingrese su nombre">
+    <br>
 
-  <br>
-  <input type="radio" name="estudios" value="no tiene estudios"> no tiene estudios
-  <br>
+    <br>
+    <input type="radio" name="estudios" value="no tiene estudios"> no tiene estudios
+    <br>
 
-  <br>
-  <input type="radio" name="estudios" value="estudios primarios"> estudios primarios
-  <br>
+    <br>
+    <input type="radio" name="estudios" value="estudios primarios"> estudios primarios
+    <br>
 
-  <br>
-  <input type="radio" name="estudios" value="estudios secundarios"> estudios secundarios
-  <br>
+    <br>
+    <input type="radio" name="estudios" value="estudios secundarios"> estudios secundarios
+    <br>
 
-  <br>
-  <input type="submit" value="confirmar">
+    <br>
+    <input type="submit" value="confirmar">
   </form>
 </body>
 </html>

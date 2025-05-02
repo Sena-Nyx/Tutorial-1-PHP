@@ -6,7 +6,7 @@
   <title>Ejercicio 11</title>
 </head>
 <body>
-<form method="post" action="t1p11.1.php">
+<form method="post" action="t1p11_php.php">
   <input type="text" name="nombre" placeholder="Ingrese su nombre">
   <br>
 
