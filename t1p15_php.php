@@ -16,7 +16,7 @@
     
     fputs($agregar, "\n");
 
-    if (isset($_RQUEST['jamon_y_queso'])) 
+    if (isset($_REQUEST['jamon_y_queso'])) 
     {
       fputs($agregar, "Jamon y queso: " . $_REQUEST['cantidad_jyq'] . "\n");
     }
@@ -34,6 +34,17 @@
     fclose($agregar);
 
     echo "Los datos se cargaron correctamente";
+  ?>
+
+  <?php
+    $agregar = fopen("datos.txt", "r") or die("No se pudo abrir el archivo");
+
+    while (!feof($agregar)) {
+      $linea = fgets($agregar);
+      echo nl2br($linea);
+    }
+
+    fclose($agregar);
   ?>
 </body>
 </html>
