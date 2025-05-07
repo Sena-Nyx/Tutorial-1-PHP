@@ -39,6 +39,19 @@
     <li><a href="t1p31.php">Ejercicio 31</a></li>
     <li><a href="t1p32.php">Ejercicio 32<a></li>
     <li><a href="t1p33.php">Ejercicio 33</a></li>
+    <li><a href="t1p34.php">Ejercicio 34</a></li>
+    <li><a href="t1p35.php">Ejercicio 35<a></li>
+    <li><a href="t1p36.php">Ejercicio 36</a></li>
+    <li><a href="t1p37.php">Ejercicio 37</a></li>
+    <li><a href="t1p38.php">Ejercicio 38<a></li>
+    <li><a href="t1p39.php">Ejercicio 39</a></li>
+    <li><a href="t1p40.php">Ejercicio 40</a></li>
+    <li><a href="t1p41.php">Ejercicio 41<a></li>
+    <li><a href="t1p42.php">Ejercicio 42</a></li>
+    <li><a href="t1p43.php">Ejercicio 43</a></li>
+    <li><a href="t1p44.php">Ejercicio 44<a></li>
+    <li><a href="t1p45.php">Ejercicio 45</a></li>
+    <li><a href="t1p46.php">Ejercicio 46</a></li>
   </ul>
 </body>
 </html>

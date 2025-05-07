@@ -9,13 +9,13 @@
   <?php
     $conexion = mysqli_connect("localhost", "root", "", "base1") or die ("Problemas con la conexion");
 
-    $registros = mysqli_query($conexion, "select * from cursos where codigo = '$_REQUEST[codigo]'") or die ("Problemas en el select: ".mysqli_error($conexion));
+    $registros = mysqli_query($conexion, "SELECT * FROM cursos WHERE codigo = '$_REQUEST[codigo]'") or die ("Problemas en el select: ".mysqli_error($conexion));
     
     if ($sele = mysqli_fetch_array($registros))
       {
   ?>
 
-  <form action="t1p25_php2.php" method="post">
+  <form action="t1p25_php_2.php" method="post">
   Ingrese nuevo nombre del curso:
   <input type="text" name="nomcurnuevo" value="<?php echo $sele['nombrecurso'] ?>">
   <br>

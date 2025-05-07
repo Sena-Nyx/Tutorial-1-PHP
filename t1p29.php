@@ -6,8 +6,10 @@
   <title>Ejercicio 29</title>
 </head>
 <body>
-  <?php
-
-  ?>
+  <form action="t1p29_php.php" method="post">
+    <label>Ingrese el codigo del alumno:</label>
+    <input type="text" name="codigo"><br>
+    <input type="submit" value="buscar">
+  </form>
 </body>
 </html>

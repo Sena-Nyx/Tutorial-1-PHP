@@ -12,20 +12,17 @@
     Ingrese email:
     <input type="text" name="email"><br>
     Seleccione el curso:
-    <select name="codigocurso">
     <?php
       $conexion = mysqli_connect("localhost", "root", "", "base1") or die("Problemas con la conexion");
-      $registros = mysqli_query($conexion,"select codigo, nombrecurso from cursos") or die("Problemas en el select:".mysqli_error($conexion));
 
-      while ($sele = mysqli_fetch_array($registros))
-      {
-      echo "<option value = \"$sele[codigo]\"> $sele[nombrecurso]</option>";
+      $registros = mysqli_query($conexion, "SELECT codigo, nombrecurso FROM cursos") or die("Problemas en el select: " . mysqli_error($conexion));
+
+      while ($curso = mysqli_fetch_array($registros)) {
+          echo " <br> <input type='radio' name='codigocurso' value='$curso[codigo]'> $curso[nombrecurso]<br>";
       }
     ?>
-    </select>
     <br>
     <input type="submit" value="Registrar">
-    <!-- INCOMPLETO -->
   </form>
 </body>
 </html>
