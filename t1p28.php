@@ -7,7 +7,19 @@
 </head>
 <body>
   <?php
+    $conexion = mysqli_connect("localhost", "root", "", "base1") or die("Problemas con la conexión");
 
+    $cursos = mysqli_query($conexion, "SELECT nombrecurso FROM cursos") or die ("Problemas en el select: ".mysqli_error($conexion));
+
+    $conteo = mysqli_query($conexion, "SELECT count(*) AS cantidad_cursos FROM cursos") or die ("Problemas en el select: ".mysqli_error($conexion));
+
+    $cantidad = mysqli_fetch_array($conteo);
+    echo "La cantidad de cursos son: $cantidad[cantidad_cursos] <br> <br>";
+  
+    while ($sele = mysqli_fetch_array($cursos)) 
+    {
+      echo "Los nombres de todos los cursos son: $sele[nombrecurso] <br>";
+    }
   ?>
 </body>
 </html>

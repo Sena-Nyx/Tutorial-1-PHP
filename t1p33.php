@@ -6,8 +6,10 @@
   <title>Ejercicio 33</title>
 </head>
 <body>
-  <?php
-
-  ?>
+  <form action="t1p33_php.php" method="post" enctype="multipart/form-data">
+    <label>Seleecione el archivo: </label> <br>
+    <input type="file" name="foto[]" multiple=""> <br>
+    <input type="submit" value="Enviar">
+  </form>
 </body>
 </html>

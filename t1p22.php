@@ -10,7 +10,7 @@
     Ingrese nombre:
     <input type="text" name="nombre">
     <br><br>
-    <input type="submit" value="Registrar">
+    <input type="submit" value="Consultar">
   </form>
 </body>
 </html>
