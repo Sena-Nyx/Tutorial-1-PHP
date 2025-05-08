@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Ejercicio 34</title>
+   <title>Ejercicio 35</title>
 </head>
 <body>
    <?php
@@ -17,7 +17,7 @@
    <form action="t1p35_php.php" method="post">
       Que tipo de noticia desea ver hoy: <br> <br>
       <input type="radio" value="politica" name="noticia">Noticia Politica <br>
-      <input type="radio" value="economica" name="noticia">Noticia Economica <br>
+      <input type="radio" value="economia" name="noticia">Noticia Economica <br>
       <input type="radio" value="deportiva" name="noticia">Noticia deportiva <br> <br>
       <input type="submit" value="Ver">
    </form>

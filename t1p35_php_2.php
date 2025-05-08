@@ -1,17 +1,28 @@
 <?php
-   if ($_REQUEST['opcion'] == "recordar")
-   setcookie("noticia", $_REQUEST['noticia'], time()+(60*60*24*365), "/");
-
-   elseif ($_REQUEST['opcion'] == "norecordar")
-   setcookie("noticia", "", time()-1000, "/");
+if ($_REQUEST['opcion'] == "recordar") 
+   {
+      if (isset($_COOKIE['noticia'])) 
+      {
+         setcookie("noticia", $_COOKIE['noticia'], time() + (60 * 60 * 24 * 365), "/");
+      } 
+   
+   else 
+   {
+      echo "No hay ninguna noticia que recordar.<br>";
+   }
+}
+elseif ($_REQUEST['opcion'] == "norecordar") {
+   setcookie("noticia", "", time() - 1000, "/");
+}
 ?>
+
 
 <!DOCTYPE html>
 <html lang="es">
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Ejercicio 34</title>
+   <title>Ejercicio 35</title>
 </head>
 <body>
    <?php
