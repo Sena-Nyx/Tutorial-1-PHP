@@ -41,7 +41,6 @@
     <li><a href="t1p33.php">Ejercicio 33</a></li>
     <li><a href="t1p34.php">Ejercicio 34</a></li>
     <li><a href="t1p35.php">Ejercicio 35<a></li>
-    <li><a href="t1p36.php">Ejercicio 36</a></li>
     <li><a href="t1p37.php">Ejercicio 37</a></li>
     <li><a href="t1p38.php">Ejercicio 38<a></li>
     <li><a href="t1p39.php">Ejercicio 39</a></li>

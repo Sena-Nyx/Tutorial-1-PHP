@@ -6,8 +6,11 @@
    <title>Ejercicio 34</title>
 </head>
 <body>
-   <?php
-   
-   ?>
+   <p>Hola!</p>
+   <form action="t1p37_php.php" method="post">
+      <label>Ingrese su email:</label>
+      <input type="text" name="campoemail"><br> <br>
+      <input type="submit" value="enviar">
+   </form>
 </body>
 </html>

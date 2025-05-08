@@ -1,3 +1,7 @@
+<?php
+   session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,7 +11,14 @@
 </head>
 <body>
    <?php
-   
+      if (isset($_SESSION['nombre']))
+      {
+         echo "Bienvenido! <br>" . $_SESSION['nombre'];
+      }
+      
+      else {
+         echo "No puede visitar esta pagina";
+      }
    ?>
 </body>
 </html>
