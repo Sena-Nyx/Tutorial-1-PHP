@@ -16,11 +16,11 @@
   ?>
 
   <form action="t1p25_php_2.php" method="post">
-  Ingrese nuevo nombre del curso:
-  <input type="text" name="nomcurnuevo" value="<?php echo $sele['nombrecurso'] ?>">
-  <br>
-  <input type="hidden" name="nomcurviejo" value="<?php echo $sele['nombrecurso'] ?>">
-  <input type="submit" value="Modificar">
+    Ingrese nuevo nombre del curso:
+    <input type="text" name="nomcurnuevo" value="<?php echo $sele['nombrecurso'] ?>">
+    <br>
+    <input type="hidden" name="nomcurviejo" value="<?php echo $sele['nombrecurso'] ?>">
+    <input type="submit" value="Modificar">
   </form>
 
   <?php
