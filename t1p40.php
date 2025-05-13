@@ -1,13 +1,19 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Ejercicio 34</title>
-</head>
-<body>
-   <?php
-   
-   ?>
-</body>
-</html>
+<?php
+$ancho = 150;
+$alto = 40;
+
+$imagen = imagecreate($ancho, $alto);
+
+$col = imagecolorallocate($imagen, 100, 149, 237); 
+$blanco = imagecolorallocate($imagen, 255, 255, 255);
+
+imagefilledrectangle($imagen, 10, 10, $ancho - 10, $alto - 10, $col);
+
+imagestring($imagen, 5, 40, 12, "Boton", $blanco);
+
+header("Content-type: image/png");
+imagepng($imagen);
+
+imagedestroy($imagen);
+?>
+

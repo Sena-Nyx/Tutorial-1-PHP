@@ -9,10 +9,10 @@
   <?php
     $conexion = mysqli_connect("localhost","root","","base1") or die("Problemas con la conexión");
     $registros = mysqli_query($conexion,"SELECT alum.codigo as codigo, nombre, email, codigocurso, nombrecurso
-    FROM alumnos AS alum
-    INNER JOIN cursos AS cur ON cur.codigo = alum.codigocurso
-    WHERE alum.codigo = $_REQUEST[codigo]") 
-    or die("Problemas en el select:".mysqli_error($conexion));
+                                          FROM alumnos AS alum
+                                          INNER JOIN cursos AS cur ON cur.codigo = alum.codigocurso
+                                          WHERE alum.codigo = $_REQUEST[codigo]") 
+                                          or die("Problemas en el select:".mysqli_error($conexion));
 
     if ($sele = mysqli_fetch_array($registros))
     {
